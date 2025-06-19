@@ -48,7 +48,7 @@ class HiveService {
   }
 
   /// Write data to a box.
-  Future<void> write({
+  Future<Result<bool>> write({
     required BoxConfig box,
     required String key,
     required dynamic value,
@@ -56,8 +56,10 @@ class HiveService {
     try {
       final hiveBox = await _getBox(box);
       await hiveBox.put(key, value);
+      return Result.ok(true);
     } catch (e, stackTrace) {
       print('Hive write error [${box.name}/$key]: $e\n$stackTrace');
+      return Result.error(Exception('Hive write failed: $e'));
     }
   }
 

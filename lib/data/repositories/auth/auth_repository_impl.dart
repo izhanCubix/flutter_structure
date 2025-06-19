@@ -93,9 +93,10 @@ class AuthRepositoryImplementation extends AuthRepository {
   Future<Result<void>> logout() async {
     try {
       await Future.delayed(Duration(seconds: 2));
-      final res = await _hiveService.delete(
+      final res = await _hiveService.write(
         box: Boxes.user,
         key: UserBoxKeys.token,
+        value: null, // Clear the token
       );
       switch (res) {
         case Ok<bool>():

@@ -44,6 +44,8 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   flutter_secure_storage: ^9.0.0
+  dio: ^5.4.0 # use latest version
+  path: ^1.8.3 # for getting file extensions (optional but useful)
 
 dev_dependencies:
   flutter_test:
