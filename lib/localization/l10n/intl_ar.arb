@@ -1,0 +1,25 @@
+{
+  "@@locale": "ar",
+  "login": "تسجيل الدخول",
+  "confirm": "تأكيد",
+  "userProfile": "الملف الشخصي لـ {name}",
+  "@userProfile": {
+    "description": "عنوان رأس ملف المستخدم الشخصي",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "tryAgain": "حاول مرة أخرى",
+  "friends": "{count, plural, =1{صديق واحد} other{{count} أصدقاء}}",
+  "@friends": {
+    "description": "عدد الأصدقاء",
+    "placeholders": {
+      "count": {
+        "example": "1"
+      }
+    }
+  },
+  
+  "errorMsgNoInternet": "لا يوجد اتصال بالإنترنت. تأكد من تشغيل Wi-Fi أو بيانات الهاتف، ثم حاول مرة أخرى.",
+  "errorMsgLogin" : "بيانات اعتماد غير صالحة"
+}

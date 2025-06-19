@@ -1,0 +1,25 @@
+{
+  "@@locale": "en",
+  "login": "Login",
+  "confirm": "Confirm",
+  "userProfile": "{name}'s Profile",
+  "@userProfile": {
+    "description": "User profile header title",
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "tryAgain": "Try again",
+  "friends": "{count, plural, =1{1 friend} other{{count} friends}}",
+    "@friends": {
+        "description": "Number of friend(s)",
+        "placeholders": {
+        "count": {
+            "example": "1"
+        }
+        }
+    },
+
+  "errorMsgNoInternet":"No internet connection. Make sure Wi-Fi or cellular data is turned on, then try again.",
+  "errorMsgLogin": "Invalid Credentials"
+}
