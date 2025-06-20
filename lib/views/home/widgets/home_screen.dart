@@ -1,4 +1,6 @@
+import 'package:base_structure/config/metrics.dart';
 import 'package:base_structure/routing/routes.dart';
+import 'package:base_structure/utils/navigation_service.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -10,9 +12,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Home')),
       body: Container(
+        padding: EdgeInsets.only(top: Metrics.largeMargin),
         child: ElevatedButton(
           onPressed: () {
-            context.go(Routes.profile);
+            NavigationService.go(Routes.profile);
           },
           child: Text('Go to Profile'),
         ),

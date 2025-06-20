@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:base_structure/data/repositories/auth/auth_repository.dart';
+import 'package:base_structure/utils/navigation_service.dart';
 import 'package:base_structure/views/home/widgets/home_screen.dart';
 import 'package:base_structure/views/login/view_models/login_viewmodel.dart';
 import 'package:base_structure/views/login/widgets/login_screen.dart';
@@ -16,6 +17,7 @@ import 'routes.dart';
 
 GoRouter router(AuthRepository authRepository) => GoRouter(
   initialLocation: Routes.login,
+  navigatorKey: NavigationService.navigatorKey,
   debugLogDiagnostics: true,
   refreshListenable: authRepository,
   redirect: _redirect,

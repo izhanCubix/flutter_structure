@@ -78,9 +78,6 @@ class ApiService {
           responseType: ResponseType.json,
         ),
       );
-
-      print('RESPONST API ===> ${response}');
-
       if (_isValidResponse(response)) {
         final data = fromJson(response.data);
         return Result.ok(data);
