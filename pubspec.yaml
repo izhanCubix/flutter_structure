@@ -46,6 +46,7 @@ dependencies:
   flutter_secure_storage: ^9.0.0
   dio: ^5.4.0 # use latest version
   path: ^1.8.3 # for getting file extensions (optional but useful)
+  logging: ^1.3.0
 
 dev_dependencies:
   flutter_test:

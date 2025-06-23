@@ -1,6 +1,4 @@
-import 'package:base_structure/data/repositories/auth/auth_repository.dart';
 import 'package:base_structure/views/profile/view_models/profile_viewmodel.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

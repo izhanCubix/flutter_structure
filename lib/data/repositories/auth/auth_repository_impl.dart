@@ -37,7 +37,7 @@ class AuthRepositoryImplementation extends AuthRepository {
     switch (result) {
       case Ok<String>():
         _authToken = result.value;
-        _isAuthenticated = result.value != null;
+        _isAuthenticated = true;
       case Error<String>():
         _log.severe('Failed to fech Token from hive', result.error);
     }
@@ -81,8 +81,6 @@ class AuthRepositoryImplementation extends AuthRepository {
         case Error<LoginResponse>():
           _log.warning('Error logging in: ${result.error}');
           return Result.error(result.error);
-        default:
-          return Result.error(Exception('Unknown error occurred during login'));
       }
     } finally {
       notifyListeners();
@@ -108,10 +106,6 @@ class AuthRepositoryImplementation extends AuthRepository {
         case Error<bool>():
           _log.severe('Failed to clear stored auth token', res.error);
           return Result.error(res.error);
-        default:
-          return Result.error(
-            Exception('Unknown error occurred during logout'),
-          );
       }
     } finally {
       notifyListeners();

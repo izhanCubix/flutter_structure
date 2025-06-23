@@ -2,7 +2,6 @@ import 'package:base_structure/config/metrics.dart';
 import 'package:base_structure/routing/routes.dart';
 import 'package:base_structure/utils/navigation_service.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

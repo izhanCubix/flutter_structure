@@ -3,7 +3,6 @@
 // found in the LICENSE file.
 
 import 'package:base_structure/data/repositories/auth/auth_repository.dart';
-import 'package:base_structure/data/repositories/auth/auth_repository_impl.dart';
 import 'package:logging/logging.dart';
 
 import '../../../../utils/command.dart';
